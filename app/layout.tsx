@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       {/* Setiap UI yang Anda tambahkan ke tata letak akar akan dibagikan di semua halaman dalam aplikasi Anda. */}
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
